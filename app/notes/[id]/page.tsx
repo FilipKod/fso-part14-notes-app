@@ -1,13 +1,13 @@
-import { notFound } from "next/navigation"
-import { getNoteById } from "../../services/notes"
-import { toggNoteleImportance } from "@/app/actions/notes"
+import { notFound } from "next/navigation";
+import { getNoteById } from "../../services/notes";
+import { toggNoteleImportance } from "@/app/actions/notes";
 
-const NotePage = async ({params}: {params: Promise<{id: string}>}) => {
-  const {id} = await params
-  const note = getNoteById(Number(id))
+const NotePage = async ({ params }: { params: Promise<{ id: string }> }) => {
+  const { id } = await params;
+  const note = await getNoteById(Number(id));
 
   if (!note) {
-    notFound()
+    notFound();
   }
 
   return (
@@ -21,7 +21,7 @@ const NotePage = async ({params}: {params: Promise<{id: string}>}) => {
         </button>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default NotePage
+export default NotePage;
