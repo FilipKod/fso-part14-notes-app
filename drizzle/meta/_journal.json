@@ -8,6 +8,20 @@
       "when": 1783253803406,
       "tag": "0000_lying_sue_storm",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1783349672783,
+      "tag": "0001_petite_mentallo",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1783351358901,
+      "tag": "0002_goofy_grey_gargoyle",
+      "breakpoints": true
     }
   ]
 }

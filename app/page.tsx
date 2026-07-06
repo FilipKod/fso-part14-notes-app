@@ -1,5 +1,5 @@
 export default function Home() {
-  console.log("hello nextjs")
+  console.log("hello nextjs");
   return (
     <div>
       <div>

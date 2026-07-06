@@ -13,10 +13,12 @@ export default function RootLayout({
           {" | "}
           <Link href={"/notes"}>notes</Link>
           {" | "}
+          <Link href={"/users"}>users</Link>
+          {" | "}
           <Link href={"/notes/new"}>create note</Link>
         </nav>
         {children}
-        </body>
+      </body>
     </html>
   );
 }
